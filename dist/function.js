@@ -5,5 +5,5 @@ function logError(msg) {
 function throwError() {
     throw new Error("Unexpected error");
 }
-console.log(throwError());
+console.log(logError("hi"));
 //# sourceMappingURL=function.js.map
