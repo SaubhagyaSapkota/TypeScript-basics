@@ -4,4 +4,9 @@ const res = {
     email: "sau@gmail.com",
 };
 console.log(res);
+const res2 = {
+    id: 12,
+    name: "saubhagya",
+};
+console.log(res2);
 //# sourceMappingURL=utility.js.map
