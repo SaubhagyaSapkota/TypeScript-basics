@@ -30,3 +30,45 @@ const res2: withoutPassword = {
   //   password: "okokok",
 };
 console.log(res2);
+
+// Use Partial to define an updateUser() function
+
+type Userpartial = {
+  id: number;
+  name: string;
+  address: string;
+};
+
+type updateUserInput = Partial<Userpartial>;
+
+const res3 = (data: updateUserInput) => {
+  console.log(data);
+};
+
+res3({ name: "saubhagya" });
+
+// use Record to define user access control map.
+
+type Roles = "admin" | "doctor" | "patient";
+
+const access: Record<Roles, string> = {
+  admin: "aaa",
+  doctor: "bbb",
+  patient: "ccc",
+};
+
+console.log(access);
+
+// Try Readonly on config object and try modifyling it.
+
+type Config = {
+  url: string;
+};
+
+const config: Readonly<Config> = {
+  url: "https://api.example.com",
+};
+
+// config.url = "jdjdd"  // ❌ cannot do it
+
+console.log(config);

@@ -9,4 +9,18 @@ const res2 = {
     name: "saubhagya",
 };
 console.log(res2);
+const res3 = (data) => {
+    console.log(data);
+};
+res3({ name: "saubhagya" });
+const access = {
+    admin: "aaa",
+    doctor: "bbb",
+    patient: "ccc",
+};
+console.log(access);
+const config = {
+    url: "https://api.example.com",
+};
+console.log(config);
 //# sourceMappingURL=utility.js.map
